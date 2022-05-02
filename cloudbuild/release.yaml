@@ -1,14 +1,14 @@
 ---
 steps:
 
-  # Install pipenv, install deps, compile pipelines
+  # Install poetry, install deps, compile pipelines
   - name: python:3.7
     entrypoint: /bin/sh
     args:
       - -c
       - |
-        pip install pipenv && \
-        pipenv install && \
+        pip install poetry && \
+        poetry install && \
         make compile pipeline=training && \
         make compile pipeline=prediction
     env:
@@ -37,8 +37,8 @@ steps:
     args:
       - -c
       - |
-        pip install pipenv && \
-        pipenv install --dev && \
+        pip install poetry && \
+        poetry install && \
         make e2e-tests pipeline=training && \
         make e2e-tests pipeline=prediction
     env:

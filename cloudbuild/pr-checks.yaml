@@ -1,7 +1,7 @@
 ---
 steps:
 
-  # Install pipenv and deps, run pre-commit and unit tests
+  # Install poetry and deps, run pre-commit and unit tests
   # Then compile pipelines (to make sure they can compile)
   # need to run "git init" for pre-commit checks to work
   - name: python:3.7
@@ -9,8 +9,8 @@ steps:
     args:
       - -c
       - |
-        pip install pipenv && \
-        pipenv install --dev && \
+        pip install poetry && \
+        poetry install && \
         git init && \
         git add . && \
         make pre-commit && \

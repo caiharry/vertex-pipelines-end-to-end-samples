@@ -20,8 +20,6 @@ SKL_SERVING_CONTAINER_IMAGE_URI = (
 # Required packages + versions for components
 # ###########################################
 
-# Ensure that these versions are in sync with Pipfile
-
 # Google SDK specific
 GOOGLE_CLOUD_BIGQUERY = "google-cloud-bigquery==2.30.0"
 GOOGLE_CLOUD_STORAGE = "google-cloud-storage==1.42.2"
