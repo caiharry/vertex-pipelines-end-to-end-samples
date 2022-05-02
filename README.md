@@ -74,12 +74,14 @@ This project supports a no. of pipeline templates (see the [separate README](pip
 For example, you can run the XGBoost training pipeline with:
 
 ```
+cd pipelines
 make run PIPELINE_TEMPLATE=xgboost pipeline=training
 ```
 
 Alternatively, add the environment variable `PIPELINE_TEMPLATE=xgboost` and/or `pipeline=training` to `env.sh`, then:
 
 ```bash
+cd pipelines
 make run pipeline=<training|prediction>
 ```
 

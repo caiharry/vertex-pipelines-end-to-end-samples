@@ -240,7 +240,7 @@ make pre-commit
 TBD
 
 ## Makefile
-This project contains a [Makefile](Makefile) which contains "rules" describing the commands to be executed by the system. These allow you to quickly and easily run commands for specific purposes, for example running all of the unit-tests, or compiling a pipeline. You can find the full set of available `make` rules by running:
+This project contains a [Makefile](pipelines/Makefile) which contains "rules" describing the commands to be executed by the system. These allow you to quickly and easily run commands for specific purposes, for example running all of the unit-tests, or compiling a pipeline. You can find the full set of available `make` rules by running:
 ```
 make help
 ```
