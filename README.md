@@ -56,7 +56,7 @@ In the repository, execute:
 
 1. Install Python: `pyenv install`
 1. Install poetry: `pip install poetry`
-1. Install pipenv dependencies: `poetry install`
+1. Install poetry dependencies: `poetry install`
 1. Install pre-commit hooks: `poetry run pre-commit install`
 1. Copy `env.sh.example` to `env.sh`, and update the environment variables in `env.sh`
 
